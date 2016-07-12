@@ -1,4 +1,5 @@
-﻿using NUnit.Framework;
+﻿using System;
+using NUnit.Framework;
 
 namespace Counter
 {
@@ -12,5 +13,13 @@ namespace Counter
          
            Assert.That(numberOfTimesCalled, Is.GreaterThan(0));
        }
+       
+        [Test]
+       public static void NumberOfTimesCalledReturnsString()
+        {
+            var numberOfTimesCalled = Counter.NumberOfTimesCalled();
+            
+            Assert.IsInstanceOf(typeof(String), numberOfTimesCalled);
+        }
     }
 }

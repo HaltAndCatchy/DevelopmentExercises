@@ -21,8 +21,10 @@ namespace Counter
 
         public static int NumberOfTimesCalled()
         {
-            int callCount = 8;
+            int callCount = 88;
             return callCount;
+
+            
         }
     }
 
