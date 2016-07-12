@@ -1,0 +1,7 @@
+C:\CSharpDevving\Exercises_CSharp_July\Counter\bin\Debug\Counter.dll
+C:\CSharpDevving\Exercises_CSharp_July\Counter\bin\Debug\Counter.pdb
+C:\CSharpDevving\Exercises_CSharp_July\Counter\obj\Debug\Counter.csprojResolveAssemblyReference.cache
+C:\CSharpDevving\Exercises_CSharp_July\Counter\obj\Debug\Counter.dll
+C:\CSharpDevving\Exercises_CSharp_July\Counter\obj\Debug\Counter.pdb
+C:\CSharpDevving\Exercises_CSharp_July\Counter\bin\Debug\nunit.framework.dll
+C:\CSharpDevving\Exercises_CSharp_July\Counter\bin\Debug\nunit.framework.xml
