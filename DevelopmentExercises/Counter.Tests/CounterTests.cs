@@ -12,6 +12,7 @@ namespace Counter.Tests
     {
         public static void RequestCaller()
         {
+            Assert.That(Counter.Request(null), Is.Not.Null);
         }
     }
 }

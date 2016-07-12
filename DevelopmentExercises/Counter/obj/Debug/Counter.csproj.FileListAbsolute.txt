@@ -1,7 +1,0 @@
-C:\Work\DevelopmentExercises\DevelopmentExercises\Counter\bin\Debug\Counter.dll
-C:\Work\DevelopmentExercises\DevelopmentExercises\Counter\bin\Debug\Counter.pdb
-C:\Work\DevelopmentExercises\DevelopmentExercises\Counter\bin\Debug\nunit.framework.dll
-C:\Work\DevelopmentExercises\DevelopmentExercises\Counter\bin\Debug\nunit.framework.xml
-C:\Work\DevelopmentExercises\DevelopmentExercises\Counter\obj\Debug\Counter.csprojResolveAssemblyReference.cache
-C:\Work\DevelopmentExercises\DevelopmentExercises\Counter\obj\Debug\Counter.dll
-C:\Work\DevelopmentExercises\DevelopmentExercises\Counter\obj\Debug\Counter.pdb

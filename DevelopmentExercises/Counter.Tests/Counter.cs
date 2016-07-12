@@ -3,10 +3,19 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using NUnit.Framework.Constraints;
 
 namespace Counter.Tests
 {
     class Counter
     {
+        public static void Main()
+        {
+        }
+
+        public static string Request(object o)
+        {
+            return null;
+        }
     }
 }
