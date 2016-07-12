@@ -1,0 +1,6 @@
+C:\Work\DevelopmentExercises\DevelopmentExercises\Counter.Tests\bin\Debug\Counter.Tests.dll
+C:\Work\DevelopmentExercises\DevelopmentExercises\Counter.Tests\bin\Debug\Counter.Tests.pdb
+C:\Work\DevelopmentExercises\DevelopmentExercises\Counter.Tests\bin\Debug\nunit.framework.dll
+C:\Work\DevelopmentExercises\DevelopmentExercises\Counter.Tests\bin\Debug\nunit.framework.xml
+C:\Work\DevelopmentExercises\DevelopmentExercises\Counter.Tests\obj\Debug\Counter.Tests.dll
+C:\Work\DevelopmentExercises\DevelopmentExercises\Counter.Tests\obj\Debug\Counter.Tests.pdb
