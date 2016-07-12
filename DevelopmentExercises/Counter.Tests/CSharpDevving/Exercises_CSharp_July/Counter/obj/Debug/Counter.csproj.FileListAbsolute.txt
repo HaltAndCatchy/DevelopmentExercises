@@ -11,4 +11,3 @@ C:\Work\DevelopmentExercises\DevelopmentExercises\Counter.Tests\CSharpDevving\Ex
 C:\Work\DevelopmentExercises\DevelopmentExercises\Counter.Tests\CSharpDevving\Exercises_CSharp_July\Counter\bin\Debug\nunit.framework.xml
 C:\Work\DevelopmentExercises\DevelopmentExercises\Counter.Tests\CSharpDevving\Exercises_CSharp_July\Counter\obj\Debug\Counter.dll
 C:\Work\DevelopmentExercises\DevelopmentExercises\Counter.Tests\CSharpDevving\Exercises_CSharp_July\Counter\obj\Debug\Counter.pdb
-C:\Work\DevelopmentExercises\DevelopmentExercises\Counter.Tests\CSharpDevving\Exercises_CSharp_July\Counter\obj\Debug\Counter.csprojResolveAssemblyReference.cache

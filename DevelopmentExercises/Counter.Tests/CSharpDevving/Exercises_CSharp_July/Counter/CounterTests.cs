@@ -6,7 +6,7 @@ namespace Counter
     public class CounterTests
     {
        [Test]
-       public static void RequestCallTypeChecker()
+       public static void RequestCallsNumberChecker()
        {
            int numberOfTimesCalled = Counter.NumberOfTimesCalled();
          
