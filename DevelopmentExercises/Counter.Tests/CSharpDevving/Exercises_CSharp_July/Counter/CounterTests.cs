@@ -6,9 +6,11 @@ namespace Counter
     public class CounterTests
     {
        [Test]
-       public static void RequestChecker()
+       public static void RequestCallTypeChecker()
        {
-           Assert.That(Counter.Request, Is.Not.Empty);
+           int numberOfTimesCalled = Counter.NumberOfTimesCalled();
+         
+           Assert.That(numberOfTimesCalled, Is.GreaterThan(0));
        }
     }
 }

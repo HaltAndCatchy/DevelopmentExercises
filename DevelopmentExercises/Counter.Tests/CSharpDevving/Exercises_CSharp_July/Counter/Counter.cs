@@ -19,8 +19,10 @@ namespace Counter
         {
         }
 
-        public static void NumberOfTimesCalled(string callCount)
+        public static int NumberOfTimesCalled()
         {
+            int callCount = 0;
+            return callCount;
         }
     }
 
