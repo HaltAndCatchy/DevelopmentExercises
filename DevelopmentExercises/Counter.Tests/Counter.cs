@@ -13,9 +13,9 @@ namespace Counter.Tests
         {
         }
 
-        public static string Request(object o)
+        public static bool Request()
         {
-            return null;
+            return true;
         }
     }
 }
