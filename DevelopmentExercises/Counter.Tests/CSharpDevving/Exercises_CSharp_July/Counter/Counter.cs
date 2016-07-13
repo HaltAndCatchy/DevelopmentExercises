@@ -13,29 +13,16 @@ namespace Counter
         }
     }
 
-    public class Counter
+    public static class Counter
     {
-        private static int _count;
-
-        
-        public static int Request()
-        {
-            {
-                _count++;
-            }
-           
-            var actualAnswer = _count;
-            return actualAnswer;
-        }
+        public static int Request { get;  set; }
 
         public static string NumberOfTimesCalled()
         {
-            int requestAnswerCounter = _count;
-            
-            string callCount = requestAnswerCounter.ToString();
-           
-            return callCount;
 
+            Request++;
+            string numberOfTimesCalled = Request.ToString();
+            return numberOfTimesCalled;
         }
     }
 
