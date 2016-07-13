@@ -17,7 +17,7 @@ namespace Counter
         {
             Request++;
             string numberOfTimesCalled = Request.ToString();
-            Console.WriteLine(numberOfTimesCalled);
+            Console.WriteLine("The Request method has been called " + numberOfTimesCalled + " time/s.");
             
             return numberOfTimesCalled;
         }
