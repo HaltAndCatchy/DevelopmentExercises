@@ -29,5 +29,13 @@ namespace Counter
           
            Assert.That(requestMessage, Is.EqualTo("You rang?"));
        }
+
+       [Test]
+       public static void NumberOfTimesCalledCallsRequestMethod()
+       {
+           var callRequest = Counter.NumberOfTimesCalled();
+           var actualAnswer = Counter.Request();
+           Assert.That(callRequest, Is.EqualTo(actualAnswer));
+       }
     }
 }

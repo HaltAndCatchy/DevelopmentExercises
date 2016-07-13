@@ -17,15 +17,19 @@ namespace Counter
     {
         public static string Request()
         {
-            return "You rang?";
+            var actualAnswer = "You rang?";
+            return actualAnswer;
         }
 
         public static string NumberOfTimesCalled()
         {
-            string callCount = "88";
-            return callCount;
-
+            var requestAnswer = Request();
             
+            if (Request().Contains(" ")) 
+               
+            return requestAnswer;
+
+            return null;
         }
     }
 
