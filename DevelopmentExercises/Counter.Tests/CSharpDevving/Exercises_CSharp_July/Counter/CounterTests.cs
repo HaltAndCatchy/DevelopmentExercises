@@ -9,7 +9,7 @@ namespace Counter
        [Test]
        public static void RequestCallsNumberChecker()
        {
-           int numberOfTimesCalled = Counter.NumberOfTimesCalled();
+           int numberOfTimesCalled = int.Parse(Counter.NumberOfTimesCalled());
          
            Assert.That(numberOfTimesCalled, Is.GreaterThan(0));
        }
