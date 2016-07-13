@@ -29,13 +29,12 @@ namespace Counter
        //    Assert.IsInstanceOf(typeof(int), actualAnswer);
        //}
 
-       //[Test]
-       //public static void NumberOfTimesCalledCallsRequestMethod()
-       //{
-       //    int callRequest =  int.Parse(Counter.NumberOfTimesCalled());
-       //    var actualAnswer = Counter.Request();
-          
-       //    Assert.That(callRequest, Is.EqualTo(actualAnswer));
-       //}
+        [Test]
+        public static void NumberOfTimesCalledMatchesRequestMethod()
+        {
+            int numberOfTimesCalled = int.Parse(Counter.NumberOfTimesCalled());
+            int callCount = Counter.Request;
+            Assert.That(numberOfTimesCalled, Is.EqualTo(callCount));
+        }
     }
 }

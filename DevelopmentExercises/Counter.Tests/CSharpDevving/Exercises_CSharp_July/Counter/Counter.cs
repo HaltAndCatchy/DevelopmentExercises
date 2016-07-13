@@ -22,6 +22,9 @@ namespace Counter
 
             Request++;
             string numberOfTimesCalled = Request.ToString();
+            
+            Console.WriteLine(numberOfTimesCalled);
+            
             return numberOfTimesCalled;
         }
     }
