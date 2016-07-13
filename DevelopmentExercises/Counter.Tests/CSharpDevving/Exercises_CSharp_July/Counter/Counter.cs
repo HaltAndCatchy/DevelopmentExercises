@@ -15,8 +15,15 @@ namespace Counter
 
     public class Counter
     {
+        private static int _count;
+
+        
         public static string Request()
         {
+            {
+                _count++;
+            }
+           
             var actualAnswer = "You rang?";
             return actualAnswer;
         }
@@ -24,10 +31,14 @@ namespace Counter
         public static string NumberOfTimesCalled()
         {
             var requestAnswer = Request();
+            int requestAnswerCounter = _count;
             
-            if (Request().Contains(" ")) 
+            
+            //if (Request().Contains(" ")) 
                
-            return requestAnswer;
+            string callCount = requestAnswerCounter.ToString();
+           
+            return callCount;
 
             return null;
         }
