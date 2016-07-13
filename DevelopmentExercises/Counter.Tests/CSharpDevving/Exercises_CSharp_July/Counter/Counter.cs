@@ -18,29 +18,24 @@ namespace Counter
         private static int _count;
 
         
-        public static string Request()
+        public static int Request()
         {
             {
                 _count++;
             }
            
-            var actualAnswer = "You rang?";
+            var actualAnswer = _count;
             return actualAnswer;
         }
 
         public static string NumberOfTimesCalled()
         {
-            var requestAnswer = Request();
             int requestAnswerCounter = _count;
             
-            
-            //if (Request().Contains(" ")) 
-               
             string callCount = requestAnswerCounter.ToString();
            
             return callCount;
 
-            return null;
         }
     }
 

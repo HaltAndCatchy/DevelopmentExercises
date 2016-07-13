@@ -23,11 +23,10 @@ namespace Counter
         }
 
        [Test]
-       public static void RequestMethodIsCalled()
+       public static void RequestMethodReturnsInt()
        {
-           string requestMessage = Counter.Request();
-          
-           Assert.That(requestMessage, Is.EqualTo("You rang?"));
+           int actualAnswer = Counter.Request();
+           Assert.IsInstanceOf(typeof(int), actualAnswer);
        }
 
        [Test]
