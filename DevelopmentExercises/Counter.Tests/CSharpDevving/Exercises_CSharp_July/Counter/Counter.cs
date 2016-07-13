@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Counter
 {
@@ -19,15 +15,11 @@ namespace Counter
 
         public static string NumberOfTimesCalled()
         {
-
             Request++;
             string numberOfTimesCalled = Request.ToString();
-            
             Console.WriteLine(numberOfTimesCalled);
             
             return numberOfTimesCalled;
         }
     }
-
-   
 }
