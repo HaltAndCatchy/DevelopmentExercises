@@ -17,7 +17,7 @@ namespace Counter
     {
         public static string Request()
         {
-            return "";
+            return "You rang?";
         }
 
         public static string NumberOfTimesCalled()
