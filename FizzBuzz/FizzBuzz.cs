@@ -11,7 +11,7 @@ namespace FizzBuzz
     {
         public static string Say()
         {
-            throw new NotImplementedException();
+            return "";
         }
     }
 }
