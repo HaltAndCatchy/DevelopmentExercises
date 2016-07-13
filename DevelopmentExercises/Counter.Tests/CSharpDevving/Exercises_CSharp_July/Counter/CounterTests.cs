@@ -22,12 +22,12 @@ namespace Counter
             Assert.IsInstanceOf(typeof(String), numberOfTimesCalled);
         }
 
-       //[Test]
-       //public static void RequestMethodReturnsInt()
-       //{
-       //    int actualAnswer = Counter.Request();
-       //    Assert.IsInstanceOf(typeof(int), actualAnswer);
-       //}
+        [Test]
+        public static void RequestMethodReturnsInt()
+        {
+            int actualAnswer = Counter.Request;
+            Assert.IsInstanceOf(typeof(int), actualAnswer);
+        }
 
         [Test]
         public static void NumberOfTimesCalledMatchesRequestMethod()
