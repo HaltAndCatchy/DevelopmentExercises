@@ -15,8 +15,9 @@ namespace Counter
 
     public class Counter
     {
-        public static void Request()
+        public static string Request()
         {
+            return "";
         }
 
         public static string NumberOfTimesCalled()

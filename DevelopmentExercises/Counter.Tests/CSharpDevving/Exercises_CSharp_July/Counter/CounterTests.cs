@@ -21,5 +21,13 @@ namespace Counter
             
             Assert.IsInstanceOf(typeof(String), numberOfTimesCalled);
         }
+
+       [Test]
+       public static void RequestMethodIsCalled()
+       {
+           string requestMessage = Counter.Request();
+          
+           Assert.That(requestMessage, Is.EqualTo("You rang?"));
+       }
     }
 }
