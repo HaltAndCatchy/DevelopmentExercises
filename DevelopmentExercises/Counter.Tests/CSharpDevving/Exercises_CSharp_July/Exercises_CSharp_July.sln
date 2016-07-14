@@ -5,6 +5,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Counter", "Counter\Counter.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FizzBuzz", "..\..\..\..\FizzBuzz\FizzBuzz.csproj", "{64551A4B-4659-4C45-B081-D4609E46465A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Scratchpad", "Scratchpad\Scratchpad.csproj", "{E3F80880-BF40-43D2-BDF9-1EB88058044F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YellowBook", "..\..\..\..\YellowBook\YellowBook.csproj", "{C4798826-600E-455F-BB89-5F0296FB5778}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -19,6 +23,14 @@ Global
 		{64551A4B-4659-4C45-B081-D4609E46465A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{64551A4B-4659-4C45-B081-D4609E46465A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{64551A4B-4659-4C45-B081-D4609E46465A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E3F80880-BF40-43D2-BDF9-1EB88058044F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E3F80880-BF40-43D2-BDF9-1EB88058044F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E3F80880-BF40-43D2-BDF9-1EB88058044F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E3F80880-BF40-43D2-BDF9-1EB88058044F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C4798826-600E-455F-BB89-5F0296FB5778}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C4798826-600E-455F-BB89-5F0296FB5778}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C4798826-600E-455F-BB89-5F0296FB5778}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C4798826-600E-455F-BB89-5F0296FB5778}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
