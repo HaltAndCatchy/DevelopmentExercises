@@ -16,7 +16,7 @@ namespace FizzBuzz
 
         public static int Input()
         {
-            throw new NotImplementedException();
+            return 7;
         }
     }
 }
