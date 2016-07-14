@@ -13,5 +13,10 @@ namespace FizzBuzz
         {
             return "";
         }
+
+        public static int Input()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

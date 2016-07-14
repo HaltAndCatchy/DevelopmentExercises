@@ -16,5 +16,12 @@ namespace FizzBuzz
             string sayOutPut = FizzBuzz.Say();
             Assert.IsInstanceOf(typeof(String), sayOutPut);
         }
+
+        [Test]
+        public static void InputIsInt()
+        {
+            int sayInput = FizzBuzz.Input();
+            Assert.IsInstanceOf(typeof(Int32), sayInput);
+        }
     }
 }
