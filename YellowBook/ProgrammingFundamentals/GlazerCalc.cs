@@ -65,5 +65,18 @@ namespace YellowBook
             Console.ReadLine();
 
         }
+
+        public class WhileLoopInsteadOfFor
+        {
+            public static void Hello()
+            {
+                int i = 1;
+                while (i < 11)
+                {
+                    Console.WriteLine("Hello");
+                    i = i + 1;
+                }
+            }
+        }
     }
 }
