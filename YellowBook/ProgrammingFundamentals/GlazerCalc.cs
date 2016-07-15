@@ -44,6 +44,7 @@ namespace YellowBook
            
             LoopsControlFlow.While();
             LoopsControlFlow.For();
+            PrintingThingsNicely.PlaceholderExample();
         }
 
         public class LoopsControlFlow
@@ -66,6 +67,18 @@ namespace YellowBook
                 {
                     Console.WriteLine("Bird");
                 }
+                Console.ReadLine();
+            }
+        }
+        
+        public class PrintingThingsNicely
+        {
+            public static void PlaceholderExample()
+            {
+                int i = 150;
+                double f = 1234.56789;
+                Console.WriteLine("i: {0} f: {1}", i,f );
+                Console.WriteLine("i: {1} f: {0}", f, i );
                 Console.ReadLine();
             }
         }
