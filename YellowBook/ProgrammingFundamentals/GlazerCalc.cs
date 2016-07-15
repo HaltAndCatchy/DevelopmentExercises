@@ -63,10 +63,10 @@ namespace YellowBook
             Console.WriteLine("The length of the wood is " + woodLength + "feet");
             Console.WriteLine("The area of the glass is " + glassArea + "square metres");
             Console.ReadLine();
-            WhileLoopInsteadOfFor.Hello();
+            LoopsControlFlow.Hello();
         }
 
-        public class WhileLoopInsteadOfFor
+        public class LoopsControlFlow
         {
             public static void Hello()
             {
