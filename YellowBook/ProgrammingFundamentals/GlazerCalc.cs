@@ -63,7 +63,7 @@ namespace YellowBook
             Console.WriteLine("The length of the wood is " + woodLength + "feet");
             Console.WriteLine("The area of the glass is " + glassArea + "square metres");
             Console.ReadLine();
-
+            WhileLoopInsteadOfFor.Hello();
         }
 
         public class WhileLoopInsteadOfFor
@@ -76,6 +76,7 @@ namespace YellowBook
                     Console.WriteLine("Hello");
                     i = i + 1;
                 }
+                Console.ReadLine();
             }
         }
     }
