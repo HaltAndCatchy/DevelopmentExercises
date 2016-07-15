@@ -19,25 +19,14 @@ namespace YellowBook
 
             string widthString, heightString;
 
-            Console.Write("Give the width of the window : ");
-           
-            widthString = Console.ReadLine();
-            width = double.Parse(widthString);
-
-            if (width < MIN_WIDTH)
+            do
             {
-                Console.WriteLine("Width is too small. \n\n ");
-                Console.WriteLine("Using minimum");
-                width = MIN_WIDTH;
-            }
+                Console.Write("Give the width of the window between " +
+                              MIN_WIDTH + " and " + MAX_WIDTH + " :");
+                widthString = Console.ReadLine();
+                width = double.Parse(widthString);
+            } while (width < MIN_WIDTH || width > MAX_WIDTH);
             
-            if (width > MAX_WIDTH)
-            {
-                Console.WriteLine("Width is too large. \n\n");
-                Console.WriteLine("Using maximum");
-                width = MAX_WIDTH;
-            }
-
             Console.Write("Give the height of the window : " );
            
             heightString = Console.ReadLine();
@@ -63,6 +52,7 @@ namespace YellowBook
             Console.WriteLine("The length of the wood is " + woodLength + "feet");
             Console.WriteLine("The area of the glass is " + glassArea + "square metres");
             Console.ReadLine();
+           
             LoopsControlFlow.While();
             LoopsControlFlow.For();
         }
