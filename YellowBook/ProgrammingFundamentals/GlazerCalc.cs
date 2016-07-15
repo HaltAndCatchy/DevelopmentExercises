@@ -78,7 +78,7 @@ namespace YellowBook
                 int i = 150;
                 double f = 1234.56789;
                 Console.WriteLine("i: {0} f: {1}", i,f );
-                Console.WriteLine("i: {1} f: {0}", f, i );
+                Console.WriteLine("i: {1:#,##0} f: {0:##,##0.00}", f, i );
                 Console.ReadLine();
             }
         }
