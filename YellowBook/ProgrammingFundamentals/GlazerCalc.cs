@@ -63,18 +63,29 @@ namespace YellowBook
             Console.WriteLine("The length of the wood is " + woodLength + "feet");
             Console.WriteLine("The area of the glass is " + glassArea + "square metres");
             Console.ReadLine();
-            LoopsControlFlow.Hello();
+            LoopsControlFlow.While();
+            LoopsControlFlow.For();
         }
 
         public class LoopsControlFlow
         {
-            public static void Hello()
+            public static void While()
             {
                 int i = 1;
                 while (i < 11)
                 {
                     Console.WriteLine("Hello");
                     i = i + 1;
+                }
+                Console.ReadLine();
+            }
+
+            public static void For()
+            {
+                int i;
+                for (i = 1; i < 11; i = i + 1)
+                {
+                    Console.WriteLine("Bird");
                 }
                 Console.ReadLine();
             }
