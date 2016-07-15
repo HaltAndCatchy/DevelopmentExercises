@@ -77,8 +77,19 @@ namespace YellowBook
             {
                 int i = 150;
                 double f = 1234.56789;
+                string A , B, C, D;
+                A = "TinkyWinky";
+                B = "Dipsy";
+                C = "LaaLaa";
+                D = "Po";
+                
                 Console.WriteLine("i: {0} f: {1}", i,f );
                 Console.WriteLine("i: {1:#,##0} f: {0:##,##0.00}", f, i );
+                
+                Console.WriteLine("Here are my column formatting examples: ");
+                Console.WriteLine("i:{0,10:0} f:{1,15:0.00}", i, f);
+                Console.WriteLine("i: {0,-10:0} f: {1,-15:0.00}", i, f );
+                Console.WriteLine("A: {0,-10} B: {1,-10}", A, B);
                 Console.ReadLine();
             }
         }
