@@ -10,14 +10,11 @@ namespace YellowBook
     {
        public static void Main()
        {
-           double width, height, woodLength, glassArea;
-           string widthString, heightString;
+           double woodLength, glassArea;
 
-           widthString = Console.ReadLine();
-           width = double.Parse(widthString);
+           double width = Width();
 
-           heightString = Console.ReadLine();
-           height = double.Parse(heightString);
+           double height = Height();
 
            woodLength = 2 * (width + height) * 3.25;
 
@@ -28,14 +25,27 @@ woodLength + " feet" ) ;
             Console.WriteLine( "The area of the glass is " +
 glassArea + " square metres" ) ;
            
-           Console.WriteLine(2.0 + 3.0);
-           Console.WriteLine("2.0" + 3.0);
-           Console.ReadLine();
+          
        }
 
-        public void Notes()
+        public static double Height()
         {
-            
+            string heightString;
+            double height;
+            heightString = Console.ReadLine();
+            height = double.Parse(heightString);
+            return height;
         }
+
+        public static double Width()
+        {
+            string widthString;
+            double width;
+            widthString = Console.ReadLine();
+            width = double.Parse(widthString);
+            return width;
+        }
+
+       
     }
 }
