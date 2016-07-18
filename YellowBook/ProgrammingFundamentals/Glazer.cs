@@ -1,12 +1,15 @@
 ﻿using System;
-using ProgrammingFundamentals;
 
-namespace YellowBook
+namespace ProgrammingFundamentals
 {
     public class Glazer
     {
-        public void WindowWidth()
+       
+        public void WindowMeasures(string prompt, double low, double high)
         {
+            var readValue = new ValueReader();
+            readValue.ReadValue(prompt, low, high);
+
             const double MAX_WIDTH = 5.0;
             const double MIN_WIDTH = 0.5;
 
@@ -41,18 +44,19 @@ namespace YellowBook
 
         public double Width(double MIN_WIDTH, double MAX_WIDTH)
         {
-            string widthString;
-            double width;
-            do
-            {
-                Console.Write("Give the width of the window between " +
-                              MIN_WIDTH + " and " + MAX_WIDTH + " :");
-                widthString = Console.ReadLine();
-                width = double.Parse(widthString);
-            } while (width < MIN_WIDTH || width > MAX_WIDTH);
-            return width;
-            
-        }
+            //string widthString;
+            ////double width;
+            ////do
+            ////{
+            ////    Console.Write("Give the width of the window between " +
+            ////                  MIN_WIDTH + " and " + MAX_WIDTH + " :");
+            ////    widthString = Console.ReadLine();
+            ////    width = double.Parse(widthString);
+            ////} while (width < MIN_WIDTH || width > MAX_WIDTH);
+            ////return width;
 
+            double windowWidth =0;
+            return windowWidth;
+        }
     }
 }

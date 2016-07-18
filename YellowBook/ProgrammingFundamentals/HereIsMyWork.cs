@@ -8,7 +8,8 @@ namespace YellowBook
         public static void Main()
         {
             var glazer = new Glazer();
-            glazer.WindowWidth();
+            glazer.Height(0.5, 5);
+
 
             ////var loopControlFlow = new LoopsControlFlow();
             ////loopControlFlow.While();
