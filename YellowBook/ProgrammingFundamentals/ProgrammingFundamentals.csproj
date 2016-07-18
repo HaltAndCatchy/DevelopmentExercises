@@ -41,6 +41,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Glazer.cs" />
     <Compile Include="GlazerCalc.cs" />
     <Compile Include="MethodDemo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
