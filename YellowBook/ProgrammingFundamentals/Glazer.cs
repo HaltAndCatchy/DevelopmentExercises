@@ -4,21 +4,11 @@ namespace ProgrammingFundamentals
 {
     public class Glazer
     {
-       
-        public void WindowMeasures(string prompt, double low, double high)
+
+        public void WindowMeasures()
         {
-            var readValue = new ValueReader();
-            readValue.ReadValue(prompt, low, high);
-
-            const double MAX_WIDTH = 5.0;
-            const double MIN_WIDTH = 0.5;
-
-            const double MAX_HEIGHT = 3.0;
-            const double MIN_HEIGHT = 0.75;
-
-
-            double width = Width(MIN_WIDTH, MAX_WIDTH);
-            double height = Height(MIN_HEIGHT, MAX_HEIGHT);
+            double width = Width();
+            double height = Height();
 
             double woodLength = 2 * (width + height) * 3.25;
             double glassArea = 2 * (width + height);
@@ -28,35 +18,27 @@ namespace ProgrammingFundamentals
             Console.ReadLine();
         }
 
-        public double Height(double MIN_HEIGHT, double MAX_HEIGHT)
+        public double Height()
         {
-            string heightString;
-            double height;
-            do
-            {
-                Console.Write("Give the height of the window between " +
-                              MIN_HEIGHT + " and " + MAX_HEIGHT + " :");
-                heightString = Console.ReadLine();
-                height = double.Parse(heightString);
-            } while (height < MIN_HEIGHT || height > MAX_HEIGHT);
-            return height;
+            const double maxHeight = 3.0;
+            const double minHeight = 0.75;
+            var readValue = new ValueReader();
+
+            double windowHeight = readValue.ReadValue("Enter height of window", minHeight, maxHeight);
+
+            Console.WriteLine("Height: " + windowHeight);
+            return windowHeight;
         }
 
-        public double Width(double MIN_WIDTH, double MAX_WIDTH)
+        public double Width()
         {
-            //string widthString;
-            ////double width;
-            ////do
-            ////{
-            ////    Console.Write("Give the width of the window between " +
-            ////                  MIN_WIDTH + " and " + MAX_WIDTH + " :");
-            ////    widthString = Console.ReadLine();
-            ////    width = double.Parse(widthString);
-            ////} while (width < MIN_WIDTH || width > MAX_WIDTH);
-            ////return width;
-
-            double windowWidth =0;
-            return windowWidth;
+           const double maxWidth = 5.0;
+           const double minWidth = 0.5;
+           var getValue = new ValueReader();
+           
+           double windowWidth = getValue.ReadValue(low:minWidth, high:maxWidth, prompt:"Enter width of window: " );
+           Console.WriteLine("Width: " + windowWidth);
+           return windowWidth;
         }
     }
 }

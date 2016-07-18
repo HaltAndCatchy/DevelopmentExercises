@@ -8,8 +8,11 @@ namespace YellowBook
         public static void Main()
         {
             var glazer = new Glazer();
-            glazer.Height(0.5, 5);
+            glazer.WindowMeasures();
+        }
 
+        public void CallMyDemos(string prompt, double low, double high)
+        {
 
             ////var loopControlFlow = new LoopsControlFlow();
             ////loopControlFlow.While();
@@ -19,7 +22,7 @@ namespace YellowBook
 
             var methodDemo = new MethodDemo();
             methodDemo.CalltheOtherOne();
-           
+
             var returnDemo = new ReturnDemo();
             returnDemo.ReturningDemo();
         }

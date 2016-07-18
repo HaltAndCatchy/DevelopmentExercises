@@ -6,7 +6,7 @@ namespace ProgrammingFundamentals
     {
         public double ReadValue(string prompt,double low,double high )
         {
-            double result = 0;
+            double result; 
             do
             {
                 Console.WriteLine(prompt + "between " + low + " and " + high);
