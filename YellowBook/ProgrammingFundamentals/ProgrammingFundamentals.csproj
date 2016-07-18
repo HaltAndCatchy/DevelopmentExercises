@@ -44,6 +44,7 @@
     <Compile Include="GlazerCalc.cs" />
     <Compile Include="MethodDemo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReturnDemo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
