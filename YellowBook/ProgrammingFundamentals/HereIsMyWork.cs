@@ -1,16 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using ProgrammingFundamentals;
 
 namespace YellowBook
 {
-    public class GlazerCalc
+    public class HereIsMyWork
     {
-        private readonly Glazer _glazer = new Glazer();
-
         public static void Main()
         {
             var glazer = new Glazer();
@@ -24,6 +18,7 @@ namespace YellowBook
 
             var methodDemo = new MethodDemo();
             methodDemo.CalltheOtherOne();
+           
             var returnDemo = new ReturnDemo();
             returnDemo.ReturningDemo();
         }
@@ -58,11 +53,9 @@ namespace YellowBook
             {
                 int i = 150;
                 double f = 1234.56789;
-                string A , B, C, D;
+                string A , B;
                 A = "TinkyWinky";
                 B = "Dipsy";
-                C = "LaaLaa";
-                D = "Po";
                 
                 Console.WriteLine("i: {0} f: {1}", i,f );
                 Console.WriteLine("i: {1:#,##0} f: {0:##,##0.00}", f, i );

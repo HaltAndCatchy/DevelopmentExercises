@@ -42,7 +42,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Glazer.cs" />
-    <Compile Include="GlazerCalc.cs" />
+    <Compile Include="HereIsMyWork.cs" />
     <Compile Include="MethodDemo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ReturnDemo.cs" />
