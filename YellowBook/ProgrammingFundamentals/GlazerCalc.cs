@@ -52,7 +52,7 @@ namespace YellowBook
             var methodDemo = new MethodDemo();
             methodDemo.CalltheOtherOne();
             var returnDemo = new ReturnDemo();
-            returnDemo.returningDemo();
+            returnDemo.ReturningDemo();
         }
 
         public class LoopsControlFlow
