@@ -7,22 +7,18 @@ namespace YellowBook
     {
         public void WindowWidth()
         {
-            double width, height, woodLength, glassArea;
-
             const double MAX_WIDTH = 5.0;
             const double MIN_WIDTH = 0.5;
 
             const double MAX_HEIGHT = 3.0;
             const double MIN_HEIGHT = 0.75;
 
-            string heightString;
 
-            width = Width(MIN_WIDTH, MAX_WIDTH);
+            double width = Width(MIN_WIDTH, MAX_WIDTH);
+            double height = Height(MIN_HEIGHT, MAX_HEIGHT);
 
-            height = Height(MIN_HEIGHT, MAX_HEIGHT);
-
-            woodLength = 2 * (width + height) * 3.25;
-            glassArea = 2 * (width + height);
+            double woodLength = 2 * (width + height) * 3.25;
+            double glassArea = 2 * (width + height);
 
             Console.WriteLine("The length of the wood is " + woodLength + " feet");
             Console.WriteLine("The area of the glass is " + glassArea + " square metres");
