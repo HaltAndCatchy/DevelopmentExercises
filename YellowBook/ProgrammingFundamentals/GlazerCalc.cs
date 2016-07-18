@@ -41,15 +41,17 @@ namespace YellowBook
             Console.WriteLine("The length of the wood is " + woodLength + " feet");
             Console.WriteLine("The area of the glass is " + glassArea + " square metres");
             Console.ReadLine();
-           
-            LoopsControlFlow.While();
-            LoopsControlFlow.For();
-            PrintingThingsNicely.PlaceholderExample();
+
+            var loopControlFlow = new LoopsControlFlow();
+            loopControlFlow.While();
+            loopControlFlow.For();
+            var printingThingsNicely = new PrintingThingsNicely();
+            printingThingsNicely.PlaceholderExample();
         }
 
         public class LoopsControlFlow
         {
-            public static void While()
+            public void While()
             {
                 int i = 1;
                 while (i < 11)
@@ -60,7 +62,7 @@ namespace YellowBook
                 Console.ReadLine();
             }
 
-            public static void For()
+            public void For()
             {
                 int i;
                 for (i = 1; i < 11; i = i + 1)
@@ -73,7 +75,7 @@ namespace YellowBook
         
         public class PrintingThingsNicely
         {
-            public static void PlaceholderExample()
+            public void PlaceholderExample()
             {
                 int i = 150;
                 double f = 1234.56789;
