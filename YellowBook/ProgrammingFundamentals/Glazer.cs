@@ -14,15 +14,9 @@ namespace YellowBook
             const double MAX_HEIGHT = 3.0;
             const double MIN_HEIGHT = 0.75;
 
-            string widthString, heightString;
+            string  heightString;
 
-            do
-            {
-                Console.Write("Give the width of the window between " +
-                              MIN_WIDTH + " and " + MAX_WIDTH + " :");
-                widthString = Console.ReadLine();
-                width = double.Parse(widthString);
-            } while (width < MIN_WIDTH || width > MAX_WIDTH);
+            width = Width(MIN_WIDTH, MAX_WIDTH);
 
             do
             {
@@ -38,6 +32,20 @@ namespace YellowBook
             Console.WriteLine("The length of the wood is " + woodLength + " feet");
             Console.WriteLine("The area of the glass is " + glassArea + " square metres");
             Console.ReadLine();
+        }
+
+        public double Width(double MIN_WIDTH, double MAX_WIDTH)
+        {
+            string widthString;
+            double width;
+            do
+            {
+                Console.Write("Give the width of the window between " +
+                              MIN_WIDTH + " and " + MAX_WIDTH + " :");
+                widthString = Console.ReadLine();
+                width = double.Parse(widthString);
+            } while (width < MIN_WIDTH || width > MAX_WIDTH);
+            return width;
         }
     }
 }
