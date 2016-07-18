@@ -8,16 +8,16 @@ namespace ProgrammingFundamentals
 {
     class MethodDemo
     {
-        private void Doit()
+        private void Silly(int i)
         {
-            Console.WriteLine("Hello");
-            Console.ReadLine();
+           Console.WriteLine("i is " + i);
+           Console.ReadLine();
         }
 
-        public void CallDoIt()
+        public void CalltheOtherOne()
         {
-            Doit();
-            Doit();
+           Silly(101);
+           Silly(500);
         }
     }
     
