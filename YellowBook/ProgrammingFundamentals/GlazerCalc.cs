@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using ProgrammingFundamentals;
 
 namespace YellowBook
 {
@@ -42,11 +43,14 @@ namespace YellowBook
             Console.WriteLine("The area of the glass is " + glassArea + " square metres");
             Console.ReadLine();
 
-            var loopControlFlow = new LoopsControlFlow();
-            loopControlFlow.While();
-            loopControlFlow.For();
-            var printingThingsNicely = new PrintingThingsNicely();
-            printingThingsNicely.PlaceholderExample();
+            //var loopControlFlow = new LoopsControlFlow();
+            //loopControlFlow.While();
+            //loopControlFlow.For();
+            //var printingThingsNicely = new PrintingThingsNicely();
+            //printingThingsNicely.PlaceholderExample();
+
+            var methodDemo = new MethodDemo();
+            methodDemo.CallDoIt();
         }
 
         public class LoopsControlFlow

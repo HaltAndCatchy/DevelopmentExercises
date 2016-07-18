@@ -8,5 +8,17 @@ namespace ProgrammingFundamentals
 {
     class MethodDemo
     {
+        private void Doit()
+        {
+            Console.WriteLine("Hello");
+            Console.ReadLine();
+        }
+
+        public void CallDoIt()
+        {
+            Doit();
+            Doit();
+        }
     }
+    
 }
