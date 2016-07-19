@@ -12,7 +12,7 @@ namespace ProgrammingFundamentals
                 Console.WriteLine(prompt + "between " + low + " and " + high);
                 string resultString = Console.ReadLine();
                 result = double.Parse(resultString);
-            } while ((result > low) || (result > high));
+            } while ((result > low) || (result < high));
             return result;
         }
     }
