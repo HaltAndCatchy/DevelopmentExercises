@@ -43,6 +43,7 @@
   <ItemGroup>
     <Compile Include="ArrayDemo.cs" />
     <Compile Include="Booleans.cs" />
+    <Compile Include="RecursionExample.cs" />
     <Compile Include="Glazer.cs" />
     <Compile Include="HereIsMyWork.cs" />
     <Compile Include="MethodDemo.cs" />
