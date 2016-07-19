@@ -7,8 +7,9 @@ namespace YellowBook
     {
         public static void Main()
         {
-            var glazer = new Glazer();
-            glazer.WindowMeasures();
+            var showBooleanWork = new Booleans();
+            showBooleanWork.SomeBools();
+            Console.ReadLine();
         }
 
         public void CallMyDemos(string prompt, double low, double high)
