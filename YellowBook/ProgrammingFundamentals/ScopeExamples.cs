@@ -7,9 +7,14 @@ namespace ProgrammingFundamentals
     {
         public void UsingScope()
         {
-            int i;
             {
-                int j;
+                int i;
+            }
+            {
+                int i;
+                {
+                    int j;
+                }
             }
         }
     }
