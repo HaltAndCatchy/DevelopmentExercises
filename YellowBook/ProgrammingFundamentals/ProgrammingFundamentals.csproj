@@ -41,10 +41,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ArrayDemo.cs" />
     <Compile Include="Booleans.cs" />
     <Compile Include="Glazer.cs" />
     <Compile Include="HereIsMyWork.cs" />
     <Compile Include="MethodDemo.cs" />
+    <Compile Include="MethodLibrary.cs" />
     <Compile Include="ParameterPassingExamples.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ReturnDemo.cs" />
