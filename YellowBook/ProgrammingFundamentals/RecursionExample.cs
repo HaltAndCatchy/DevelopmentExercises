@@ -24,4 +24,25 @@ namespace ProgrammingFundamentals
             Console.ReadLine();
         }
     }
+
+    public class Counter
+    {
+        public int Request(int value, ref int callCount)
+        {
+            callCount++;
+            if (value >= 10)
+            {
+                return value;
+            }
+            return Request(value + 1, ref callCount);
+        }
+
+        public string NumberOfTimesCalled()
+        {
+            int callCount = 0;
+            int totalCalls = Request(5, ref callCount);
+            string numberOfTimesCalled = totalCalls.ToString();
+            return numberOfTimesCalled;
+        }
+    }
 }
