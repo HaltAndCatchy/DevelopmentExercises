@@ -16,5 +16,20 @@ namespace ProgrammingFundamentals
            Silly(500);
         }
     }
-    
+
+    public class MethodLibrary
+    {
+        public string ReadString(string prompt)
+        {
+            string result;
+            do
+            {
+                Console.Write(prompt);
+                result = Console.ReadLine();
+            } while (result == "");
+            return result;
+        }
+    }
+    }
+
 }
