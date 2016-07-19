@@ -24,15 +24,21 @@ namespace ProgrammingFundamentals
 
             Console.WriteLine("|| operator: ");
             boolA = BooleanTrue() || BooleanFalse();
+
+            Console.WriteLine("& operator:");
+            boolA = BooleanFalse() & BooleanTrue();
+
+            Console.WriteLine("&& operator");
+            boolA = BooleanFalse() && BooleanTrue();
         }
 
-        private bool BooleanFalse()
+        public bool BooleanFalse()
         {
            Console.WriteLine("Executing BooleanFalse() = False");
             return false;
         }
 
-        private bool BooleanTrue()
+        public bool BooleanTrue()
         {
             Console.WriteLine("  Executing BooleanTrue() = True");
             return true;

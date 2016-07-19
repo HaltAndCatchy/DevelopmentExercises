@@ -8,7 +8,8 @@ namespace YellowBook
         public static void Main()
         {
             var showBooleanWork = new Booleans();
-            showBooleanWork.SomeBools();
+            //showBooleanWork.SomeBools();
+            showBooleanWork.ShortCircuiting();
             Console.ReadLine();
         }
 
