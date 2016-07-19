@@ -7,9 +7,11 @@ namespace YellowBook
     {
         public static void Main()
         {
-            var showBooleanWork = new Booleans();
+            //var showBooleanWork = new Booleans();
             //showBooleanWork.SomeBools();
-            showBooleanWork.ShortCircuiting();
+            //showBooleanWork.ShortCircuiting();
+            var memberExamples = new MemberExample();
+            memberExamples.YetAnotherMethod();
             Console.ReadLine();
         }
 
