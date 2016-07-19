@@ -2,8 +2,10 @@
 
 namespace ProgrammingFundamentals
 {
-    internal class ParameterPassingExamples
+    public class ParameterPassingExamples
     {
+        private readonly MethodLibrary _methodLibrary = new MethodLibrary();
+
         public void AddOne(int i)
         {
             i = i + 1;
@@ -13,31 +15,10 @@ namespace ProgrammingFundamentals
         public void ReadPerson(out string name, out int age)
         {
             {
-                name = ReadString("Enter your name : ");
-                age = readInt("Enter your age : ", 0, 100);
+                name = _methodLibrary.ReadString("Enter your name : ");
+                age = _methodLibrary.ReadInt("Enter your age : ", 0, 100);
             }
 
-        }
-
-        public int readInt(string prompt, int low, int high)
-        {
-            int result;
-            do
-            {
-                string intString = ReadString(prompt);
-                result = int.Parse(intString);
-            } while ((result < low) || (result > high));
-            return result;
-        }
-
-        public string ReadString(string prompt)
-        {
-            string result;
-            do{
-                Console.Write(prompt);
-                result = Console.ReadLine();
-            } while (result == "");
-            return result;
         }
     }
 
