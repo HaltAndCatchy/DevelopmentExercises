@@ -43,5 +43,18 @@ namespace ProgrammingFundamentals
             Console.WriteLine("  Executing BooleanTrue() = True");
             return true;
         }
+
+        public void BoolCheck()
+        {
+            bool b = false;
+            bool c = true;
+
+            if (b|| c) ;
+
+
+        }
+
+        
+
     }
 }
