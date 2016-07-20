@@ -7,6 +7,12 @@ namespace ProgrammingFundamentals
     {
         public string Say()
         {
+            string prompt = "Please enter an integer: ";
+            Console.WriteLine(prompt);
+
+            var usefulMethods = new UsefulMethods();
+            usefulMethods.ReadInt();
+
             return "";
         }
     }
