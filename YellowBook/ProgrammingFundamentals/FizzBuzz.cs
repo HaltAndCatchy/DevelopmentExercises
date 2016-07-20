@@ -16,7 +16,9 @@ namespace ProgrammingFundamentals
 
         public int ReadInt()
         {
-            return 1;
+            var readString = ReadString();
+            int userInt = int.Parse(readString);
+            return userInt;
         }
 
         public string ReadString()
