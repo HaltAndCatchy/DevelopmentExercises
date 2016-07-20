@@ -1,39 +1,28 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
 
 namespace ProgrammingFundamentals
 {
-    class FizzBuzz
+   public class FizzBuzz
     {
-        public string Say(ref int fizzBuzzNumber)
+        public string Say()
         {
-            string response = "";
-            return response;
+            return "";
         }
     }
 
     internal class UsefulMethods
     {
 
-        public int ReadInt(string prompt)
+        public int ReadInt()
         {
-            string intString = ReadString(prompt);
-            int fizzBuzzNumber = int.Parse(intString);
-            return fizzBuzzNumber;
+            return 1;
         }
 
-        public string ReadString(string prompt)
+        public string ReadString()
         {
-            string result;
-            do
-            {
-                Console.Write(prompt);
-                result = Console.ReadLine();
-            } while (result == "");
-            return result;
+            return "";
+
         }
     }
 
