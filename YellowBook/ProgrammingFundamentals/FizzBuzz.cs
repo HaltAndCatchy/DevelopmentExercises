@@ -12,7 +12,8 @@ namespace ProgrammingFundamentals
             string yourIntWas = "Your int was:..";
 
             var inputInt = readInput.ReadStringForFizzBuzz();
-            Console.WriteLine(yourIntWas,inputInt); 
+            Console.WriteLine(yourIntWas);
+            Console.WriteLine(inputInt);
            
             return "I'm a string";
 
