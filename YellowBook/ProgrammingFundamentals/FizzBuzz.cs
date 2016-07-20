@@ -7,15 +7,20 @@ namespace ProgrammingFundamentals
     {
         public string Say()
         {
-            string prompt = "Please enter an integer: ";
-            Console.WriteLine(prompt);
+            Promp();
 
-           var usefulMethods = new FizzBuzzUsefulMethods();
+            var usefulMethods = new FizzBuzzUsefulMethods();
            int userInt = usefulMethods.ReadIntForFizzBuzz();
 
             var stringOutput = userInt.ToString();
 
             return stringOutput;
+        }
+
+        public void Promp()
+        {
+            string prompt = "Please enter an integer: ";
+            Console.WriteLine(prompt);
         }
     }
 
@@ -28,6 +33,7 @@ namespace ProgrammingFundamentals
             
             int userInt = int.Parse(readString);
             Console.WriteLine("thanks");
+            Console.ReadLine();
             
             return userInt;
         }
