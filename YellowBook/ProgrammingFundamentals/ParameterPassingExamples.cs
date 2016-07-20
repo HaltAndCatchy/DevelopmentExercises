@@ -12,14 +12,14 @@ namespace ProgrammingFundamentals
             Console.WriteLine("i is :" + i);
         }
 
-        public void ReadPerson(out string name, out int age)
-        {
-            {
-                name = _methodLibrary.ReadString("Enter your name : ");
-                age = _methodLibrary.ReadInt("Enter your age : ", 0, 100);
-            }
+        //public void ReadPerson(out string name, out int age)
+        //{
+        //    {
+        //        //name = _methodLibrary.ReadString("Enter your name : ");
+        //        age = _methodLibrary.ReadInt("Enter your age : ", 0, 100);
+        //    }
 
-        }
+        //}
     }
 
 }

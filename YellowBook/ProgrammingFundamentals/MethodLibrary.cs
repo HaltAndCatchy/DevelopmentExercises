@@ -9,14 +9,15 @@ namespace ProgrammingFundamentals
             int result;
             do
             {
-                string intString = ReadString(prompt);
+                string intString = ReadString();
                 result = int.Parse(intString);
             } while ((result < low) || (result > high));
             return result;
         }
 
-        public string ReadString(string prompt)
+        public string ReadString()
         {
+            string prompt = Console.ReadLine();
             string result;
             do{
                 Console.Write(prompt);
