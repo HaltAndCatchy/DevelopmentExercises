@@ -54,6 +54,7 @@
     <Compile Include="ReturnDemo.cs" />
     <Compile Include="ScopeExamples.cs" />
     <Compile Include="SomeExceptionalCode.cs" />
+    <Compile Include="SwitchyMcSwitchFace.cs" />
     <Compile Include="ValueReader.cs" />
   </ItemGroup>
   <ItemGroup>

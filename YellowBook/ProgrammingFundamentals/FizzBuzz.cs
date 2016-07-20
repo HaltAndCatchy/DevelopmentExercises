@@ -32,11 +32,8 @@ namespace ProgrammingFundamentals
 
         public string ReadStringForFizzBuzz()
         {
-           string userInput;
-            do
-            {
-             userInput= Console.ReadLine();
-            } while (userInput == "");
+            string userInput = Console.ReadLine();
+
             return userInput;
         }
     }

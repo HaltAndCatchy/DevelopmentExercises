@@ -25,5 +25,13 @@ namespace ProgrammingFundamentals
             } while (result == "");
             return result;
         }
+
+        public int ReadAnotherInt()
+        {
+                string intString = ReadString();
+                int result = int.Parse(intString);
+                return result;
+        }
+
     }
 }
