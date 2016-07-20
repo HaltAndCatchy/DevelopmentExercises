@@ -10,8 +10,13 @@ namespace YellowBook
             //var showBooleanWork = new Booleans();
             //showBooleanWork.SomeBools();
             //showBooleanWork.ShortCircuiting();
-            var memberExamples = new MemberExample();
-            memberExamples.YetAnotherMethod();
+            //var memberExamples = new MemberExample();
+            //memberExamples.YetAnotherMethod();
+            //var showRecursionWork = new RecursionExample();
+            //showRecursionWork.Caller();
+            var showFizzBuzzWork = new FizzBuzz();
+            showFizzBuzzWork.Say();
+            
             Console.ReadLine();
         }
 
