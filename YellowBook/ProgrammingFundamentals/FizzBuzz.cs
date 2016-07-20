@@ -23,26 +23,21 @@ namespace ProgrammingFundamentals
         public int ReadInt()
         {
             var readString = ReadStringForFizzBuzz();
+           
+            
             int userInt = int.Parse(readString);
+            Console.WriteLine("thanks");
             return userInt;
         }
 
         public string ReadStringForFizzBuzz()
         {
-            try
+           string userInput;
+            do
             {
-                string userInput;
-                do
-                {
-                    userInput = Console.ReadLine();
-                } while (userInput == "");
-            }
-            catch
-            {
-                Console.WriteLine("Invalid format");
-            }
-
-            return "";
+             userInput= Console.ReadLine();
+            } while (userInput == "");
+            return userInput;
         }
     }
 }
