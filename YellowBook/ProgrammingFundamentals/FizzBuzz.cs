@@ -3,7 +3,7 @@
 
 namespace ProgrammingFundamentals
 {
-   public class FizzBuzz
+    public class FizzBuzz
     {
         public string Say()
         {
@@ -22,20 +22,29 @@ namespace ProgrammingFundamentals
 
         public int ReadInt()
         {
-            var readString = ReadString();
+            var readString = ReadStringForFizzBuzz();
             int userInt = int.Parse(readString);
             return userInt;
         }
 
-        public string ReadString()
+        public string ReadStringForFizzBuzz()
         {
-            string userInput;
-            do
+            try
             {
-               userInput= Console.ReadLine();
-            } while (userInput == "");
+                string userInput;
+                do
+                {
+                    userInput = Console.ReadLine();
+                } while (userInput == "");
+            }
+            catch
+            {
+                Console.WriteLine("Invalid format");
+            }
+
             return "";
         }
     }
-
 }
+
+
