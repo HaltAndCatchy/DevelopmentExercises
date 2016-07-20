@@ -9,13 +9,15 @@ namespace ProgrammingFundamentals
         {
             Promp();
             var readInput = new FizzBuzzUsefulMethods();
+            
             string yourIntWas = "Your int was:..";
+            var inputInt = readInput.ReadIntForFizzBuzz();
+           
 
-            var inputInt = readInput.ReadStringForFizzBuzz();
             Console.WriteLine(yourIntWas);
             Console.WriteLine(inputInt);
            
-            return "I'm a string";
+            return "fizzOrBuzz";
 
         }
 
