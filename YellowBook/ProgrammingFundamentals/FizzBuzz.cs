@@ -10,23 +10,25 @@ namespace ProgrammingFundamentals
             string prompt = "Please enter an integer: ";
             Console.WriteLine(prompt);
 
-            var usefulMethods = new UsefulMethods();
-            usefulMethods.ReadInt();
+           var usefulMethods = new FizzBuzzUsefulMethods();
+           int userInt = usefulMethods.ReadIntForFizzBuzz();
 
-            return "";
+            var stringOutput = userInt.ToString();
+
+            return stringOutput;
         }
     }
 
-    internal class UsefulMethods
+    public class FizzBuzzUsefulMethods
     {
 
-        public int ReadInt()
+        public int ReadIntForFizzBuzz()
         {
             var readString = ReadStringForFizzBuzz();
-           
             
             int userInt = int.Parse(readString);
             Console.WriteLine("thanks");
+            
             return userInt;
         }
 
