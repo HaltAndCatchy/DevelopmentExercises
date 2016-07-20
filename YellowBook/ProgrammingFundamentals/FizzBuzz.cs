@@ -21,8 +21,12 @@ namespace ProgrammingFundamentals
 
         public string ReadString()
         {
+            string userInput;
+            do
+            {
+               userInput= Console.ReadLine();
+            } while (userInput == "");
             return "";
-
         }
     }
 
