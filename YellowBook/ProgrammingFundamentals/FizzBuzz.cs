@@ -8,13 +8,14 @@ namespace ProgrammingFundamentals
         public string Say()
         {
             Promp();
+            var readInput = new FizzBuzzUsefulMethods();
+            string yourIntWas = "Your int was:..";
 
-            var usefulMethods = new FizzBuzzUsefulMethods();
-           int userInt = usefulMethods.ReadIntForFizzBuzz();
+            var inputInt = readInput.ReadStringForFizzBuzz();
+            Console.WriteLine(yourIntWas,inputInt); 
+           
+            return "I'm a string";
 
-            var stringOutput = userInt.ToString();
-
-            return stringOutput;
         }
 
         public void Promp()
@@ -32,8 +33,6 @@ namespace ProgrammingFundamentals
             var readString = ReadStringForFizzBuzz();
             
             int userInt = int.Parse(readString);
-            Console.WriteLine("thanks");
-            Console.ReadLine();
             
             return userInt;
         }
@@ -41,7 +40,7 @@ namespace ProgrammingFundamentals
         public string ReadStringForFizzBuzz()
         {
             string userInput = Console.ReadLine();
-
+            Console.WriteLine("thanks");
             return userInput;
         }
     }
