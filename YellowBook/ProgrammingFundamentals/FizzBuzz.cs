@@ -9,14 +9,11 @@ namespace ProgrammingFundamentals
         {
             Promp();
             var readInput = new FizzBuzzUsefulMethods();
+            readInput.ReadStringForFizzBuzz();
+            readInput.CheckIntForFizzBuzz();
+            readInput.ReadInt();
             
-            string yourIntWas = "Your int was:..";
-            var inputInt = readInput.ReadIntForFizzBuzz();
-           
 
-            Console.WriteLine(yourIntWas);
-            Console.WriteLine(inputInt);
-           
             return "fizzOrBuzz";
 
         }
@@ -30,20 +27,34 @@ namespace ProgrammingFundamentals
 
     public class FizzBuzzUsefulMethods
     {
+        int _userInt;
 
-        public int ReadIntForFizzBuzz()
+        public int ReadInt()
         {
             var readString = ReadStringForFizzBuzz();
+            _userInt = int.Parse(readString);
+            return _userInt;
+        }
+
+        public void CheckIntForFizzBuzz()
+        {
+            var readString = ReadStringForFizzBuzz();
+            try
+            {
+
+                _userInt = int.Parse(readString);
+                Console.WriteLine("Your int was : {0}", _userInt);
+            }
+            catch
+            {
+                Console.WriteLine("Please enter number in correct format");
+            }
             
-            int userInt = int.Parse(readString);
-            
-            return userInt;
         }
 
         public string ReadStringForFizzBuzz()
         {
             string userInput = Console.ReadLine();
-            Console.WriteLine("thanks");
             return userInput;
         }
     }
