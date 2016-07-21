@@ -12,18 +12,12 @@ namespace ProgrammingFundamentals
 
     public class CallMe
     {
-        public int Request()
+        public int Data = 0;
+
+        public void Count()
         {
-            return 1;
+            Data = Data + 1;
         }
 
-        public string NumberOfTimesCalled()
-        {
-            var callMe = new CallMe();
-            int call = callMe.Request();
-            string callMade = call.ToString();
-            Console.WriteLine(callMade);
-            return callMade;
-        }
     }
 }
