@@ -10,28 +10,28 @@ namespace ProgrammingFundamentals
             Prompt();
             var readInput = new FizzBuzzUsefulMethods();
             readInput.CheckIntForFizzBuzz();
+            
+            Say();
+
             var sayWhat = new FizzBuzz();
             Console.WriteLine(sayWhat.Say());
         }
 
         public string Say()
         {
+            Console.WriteLine("Say method being executed");
 
-           
-            return "Placeholder string";
+            
+            //bool multipleOfThree = MultipleOfThree();
+            //if (multipleOfThree)
+            //{
+            //    return "Placeholder";
+            //}
+            return "blah";
+
         }
 
-        public bool MultipleOfThree()
-        {
-            var readInt = new FizzBuzzUsefulMethods();
-            int userInt = readInt.ReadInt();
-
-            if (userInt%3 == 0)
-            {
-                return true;
-            }
-            return false;
-        }
+       
 
         public void Prompt()
         {
@@ -59,7 +59,6 @@ namespace ProgrammingFundamentals
 
                 _userInt = int.Parse(readString);
                 Console.WriteLine("Your int was : {0}", _userInt);
-                Console.ReadLine();
             }
             catch
             {
@@ -73,6 +72,16 @@ namespace ProgrammingFundamentals
         {
             string userInput = Console.ReadLine();
             return userInput;
+        }
+        public bool MultipleOfThree()
+        {
+            var userInt = ReadInt();
+
+            if (userInt % 3 == 0)
+            {
+                return true;
+            }
+            return false;
         }
     }
 }
