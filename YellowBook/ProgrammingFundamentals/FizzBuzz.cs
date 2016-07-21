@@ -9,9 +9,8 @@ namespace ProgrammingFundamentals
         {
             Promp();
             var readInput = new FizzBuzzUsefulMethods();
-            readInput.ReadStringForFizzBuzz();
             readInput.CheckIntForFizzBuzz();
-            readInput.ReadInt();
+            //readInput.ReadInt();
             
 
             return "fizzOrBuzz";
@@ -48,6 +47,7 @@ namespace ProgrammingFundamentals
             catch
             {
                 Console.WriteLine("Please enter number in correct format");
+                CheckIntForFizzBuzz();
             }
             
         }
