@@ -16,7 +16,21 @@ namespace ProgrammingFundamentals
 
         public string Say()
         {
-            return "fizzOrBuzz";
+
+           
+            return "Placeholder string";
+        }
+
+        public bool MultipleOfThree()
+        {
+            var readInt = new FizzBuzzUsefulMethods();
+            int userInt = readInt.ReadInt();
+
+            if (userInt%3 == 0)
+            {
+                return true;
+            }
+            return false;
         }
 
         public void Prompt()
