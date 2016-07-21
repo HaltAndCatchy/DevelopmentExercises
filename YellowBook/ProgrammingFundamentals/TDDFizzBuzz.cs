@@ -9,4 +9,11 @@ namespace ProgrammingFundamentals
     class TddFizzBuzz
     {
     }
+    public class Translator
+    {
+        public static string Translate(int i)
+        {
+            return "1";
+        }
+    }
 }
