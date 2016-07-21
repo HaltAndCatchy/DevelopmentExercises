@@ -5,19 +5,21 @@ namespace ProgrammingFundamentals
 {
     public class FizzBuzz
     {
-        public string Say()
+        public void BaseMethod()
         {
-            Promp();
+            Prompt();
             var readInput = new FizzBuzzUsefulMethods();
             readInput.CheckIntForFizzBuzz();
-            //readInput.ReadInt();
-            
-
-            return "fizzOrBuzz";
-
+            var sayWhat = new FizzBuzz();
+            Console.WriteLine(sayWhat.Say());
         }
 
-        public void Promp()
+        public string Say()
+        {
+            return "fizzOrBuzz";
+        }
+
+        public void Prompt()
         {
             string prompt = "Please enter an integer: ";
             Console.WriteLine(prompt);
@@ -43,6 +45,7 @@ namespace ProgrammingFundamentals
 
                 _userInt = int.Parse(readString);
                 Console.WriteLine("Your int was : {0}", _userInt);
+                Console.ReadLine();
             }
             catch
             {
