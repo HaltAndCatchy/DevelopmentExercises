@@ -15,7 +15,7 @@ namespace YellowBook
             //var showRecursionWork = new RecursionExample();
             //showRecursionWork.Caller();
             var showFizzBuzzWork = new FizzBuzz();
-            showFizzBuzzWork.Say();
+            showFizzBuzzWork.BaseMethod();
             
             Console.ReadLine();
         }
